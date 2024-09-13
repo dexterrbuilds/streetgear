@@ -1,0 +1,290 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@font-face {
+  font-family: 'pricedown';
+  src: url('./assets/fonts/pricedown.otf') format('truetype'); /* Adjust the path based on your font format */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* src/App.css */
+
+body {
+  background-color: #5F005C;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: white;
+}
+
+.App {
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  background-color: #D9D9D9;
+  font-family: 'pricedown';
+  color: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.home {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  font-family: 'pricedown';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.navbtn {
+  font-family: 'pricedown';
+  font-size: xx-large;
+  outline: none;
+  border: none;
+  padding: 10px;
+  color: grey;
+}
+
+.gtaImg {
+  width: 853px;
+  height: 253px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header {
+  
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 800;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input, select {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+select {
+  font-weight: bold;
+}
+
+.recipient {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+.address {
+  width: 70%;
+}
+
+.amount {
+  width: 30%;
+}
+
+.recipient input:last-child {
+  margin-right: 0;
+}
+
+button {
+  padding: 5px;
+}
+
+.btns {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.alert {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.alert-info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+}
+
+/* General form styling */
+form {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Placeholder styling */
+::placeholder {
+  color: #aaa;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Button styling */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styling for responsive design */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 10px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  .submit-btn {
+    font-size: 14px;
+  }
+}
